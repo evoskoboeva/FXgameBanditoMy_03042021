@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet fullStructureCSS.css?>
+
+<GridPane alignment="center" hgap="10" stylesheets="@../sample/MyCSS.css" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="95.0" minWidth="10.0" prefWidth="81.0" />
+      <ColumnConstraints maxWidth="119.0" minWidth="10.0" prefWidth="103.0" />
+      <ColumnConstraints maxWidth="116.0" minWidth="10.0" prefWidth="91.0" />
+      <ColumnConstraints maxWidth="125.0" minWidth="10.0" prefWidth="92.0" />
+      <ColumnConstraints maxWidth="133.0" minWidth="10.0" prefWidth="133.0" />
+   </columnConstraints>
+   <children>
+      <ImageView fx:id="img" fitHeight="431.0" fitWidth="522.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="5" GridPane.rowIndex="1" GridPane.rowSpan="8">
+         <image>
+            <Image url="@fon.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnGO" mnemonicParsing="false" onAction="#Go" prefHeight="40.0" prefWidth="68.0" text="GO!!!" GridPane.columnIndex="4" GridPane.rowIndex="2" GridPane.rowSpan="2">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtNumber1" alignment="CENTER" prefHeight="94.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="3" GridPane.valignment="CENTER">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font></TextField>
+      <TextField fx:id="txtNumber2" alignment="CENTER" prefHeight="90.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="3" GridPane.valignment="CENTER">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font></TextField>
+      <TextField fx:id="txtNumber3" alignment="CENTER" prefHeight="88.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="3" GridPane.valignment="CENTER">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font></TextField>
+      <TextField fx:id="txtInfo" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+      <Label fx:id="lbl1" prefHeight="25.0" prefWidth="52.0" textFill="#f06b54" GridPane.columnIndex="4">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl2" layoutX="417.0" layoutY="13.0" prefHeight="25.0" prefWidth="52.0" textFill="#f06b54">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl3" layoutX="10.0" layoutY="4.0" prefHeight="25.0" prefWidth="52.0" textFill="#f06b54" GridPane.rowIndex="2">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl4" layoutX="10.0" layoutY="84.0" prefHeight="25.0" prefWidth="52.0" textFill="#f06b54" GridPane.rowIndex="4">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl5" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="417.0" layoutY="13.0" prefHeight="43.0" prefWidth="52.0" textAlignment="RIGHT" textFill="#f06b54" GridPane.columnIndex="4" GridPane.rowIndex="5">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>
